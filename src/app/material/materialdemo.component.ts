@@ -12,6 +12,7 @@ import { ButtonToggleComponentDemo } from "./buttontoggle.component";
 import { CardOverviewExample } from "./matcarddemo.component";
 import { ChipsOverviewExample } from "./matchipsdemo.component";
 import { DatepickerOverviewExample } from "./datepickerdemo.component";
+import { DialogOverviewExample } from "./dialogdemo.component";
 @Component({
   selector: 'app-material',
   template: `
@@ -37,6 +38,7 @@ import { DatepickerOverviewExample } from "./datepickerdemo.component";
 <app-matcarddemo/>
 <chips-overview-example/>
 <datepicker-overview-example/>
+<dialog-overview-example/>
     `,
   standalone: true,
   imports: [MatSlideToggleModule,
@@ -45,7 +47,7 @@ import { DatepickerOverviewExample } from "./datepickerdemo.component";
     MatInputModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
-    AsyncPipe, BadgeComponent, ButtonToggleComponentDemo, CardOverviewExample, ChipsOverviewExample, DatepickerOverviewExample],
+    AsyncPipe, BadgeComponent, ButtonToggleComponentDemo, CardOverviewExample, ChipsOverviewExample, DatepickerOverviewExample, DialogOverviewExample],
   styles: `
    .example-form {
   min-width: 150px;

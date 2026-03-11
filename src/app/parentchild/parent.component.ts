@@ -5,7 +5,8 @@ import { ChildComponent } from "./child.component";
     selector: 'app-parent',
     template: `
     <p>Parent Component</p>
-    <app-child inputMessage="{{message}}" (outputMessage)="onChildMessage($event)"></app-child>
+    <!--<app-child inputMessage="{{message}}" (outputMessage)="onChildMessage($event)"></app-child>-->
+    <app-child [inputMessage]="message" (outputMessage)="onChildMessage($event)"></app-child>
     <p>Message from child: {{messageFromChild}}</p>
     `,
     standalone: true,
