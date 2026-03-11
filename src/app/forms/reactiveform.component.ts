@@ -1,6 +1,8 @@
 import { Component } from "@angular/core";
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms";
 import { UpperCasePipe, DecimalPipe, DatePipe, CurrencyPipe } from "@angular/common";
+import { StarPipe } from "../pipes/star.pipe";
+import { ButtonToggleComponentDemo } from "../material/buttontoggle.component";
 
 @Component({
     selector: 'app-reactiveform',
@@ -26,14 +28,15 @@ import { UpperCasePipe, DecimalPipe, DatePipe, CurrencyPipe } from "@angular/com
     </form>
     <section>
         <p>Today's Date: {{today | date}}</p>
-        <p>First Name: {{profileForm.value.firstName | uppercase}}</p>  
+        <p>First Name: {{profileForm.value.firstName | uppercase }}</p>  
         <p>Last Name: {{profileForm.value.lastName | uppercase}}</p>
         <p>Email: {{profileForm.value.email | uppercase}}</p>
         <p>Expected Salary: {{profileForm.value.expectedSalary | currency}}</p>
+        <p>Star Rating: {{5 | star}}</p>
     </section>
     `,
     standalone: true,
-    imports: [ReactiveFormsModule, UpperCasePipe, DatePipe, CurrencyPipe],
+    imports: [ReactiveFormsModule, UpperCasePipe, DatePipe, CurrencyPipe, StarPipe, ButtonToggleComponentDemo],
     styles: `
     form {
         display: flex;

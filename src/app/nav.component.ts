@@ -12,6 +12,8 @@ import { RouterLink } from "@angular/router";
             <li><a routerLink="/parent">Parent Child</a></li>
             <li><a routerLink="/basicform">Basic Form</a></li>
             <li><a routerLink="/reactiveform">Reactive Form</a></li>
+            <li><a routerLink="/signalsdemo">Signals Demo</a></li>
+            <li><a routerLink="/materialdemo">Material Demo</a></li>
         </ul>
     </nav>
     `,

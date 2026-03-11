@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, input } from "@angular/core";
 import { FormsModule } from "@angular/forms";
+import { HighlightDirective } from "../dirs/highlight.directive";
 
 @Component({
     selector: 'app-basicform',
@@ -8,10 +9,10 @@ import { FormsModule } from "@angular/forms";
   Favorite Framework:
   <input id="framework" type="text" [(ngModel)]="framework" name="framework"/>
 </label>
-<p>You selected {{framework}}</p>
+<p [appHighlight]="color">You selected {{framework}}</p>
     `,
     standalone: true,
-    imports: [FormsModule],
+    imports: [FormsModule, HighlightDirective],
     styles: `
     form {
         display: flex;
@@ -22,4 +23,5 @@ import { FormsModule } from "@angular/forms";
 })
 export class BasicForm {
     framework = 'Angular';
+    color = 'green';
 }

@@ -5,6 +5,9 @@ import { Blog } from './blogs/blogs.components';
 import { OptimizedImageDemo } from './blogs/optimizedimagedemo.component';
 import { BasicForm } from './forms/basicform.component';
 import { ReactiveForm } from './forms/reactiveform.component';
+import { SignalsDemo } from './signals/signalsdemo.component';
+import { MaterialComponentDemo } from './material/materialdemo.component';
+
 
 export const routes: Routes = [
     { path: 'user-profile', component: UserProfileComponent },
@@ -13,5 +16,7 @@ export const routes: Routes = [
     { path: 'optimizedimage', component: OptimizedImageDemo },
     { path: 'basicform', component: BasicForm },
     { path: 'reactiveform', component: ReactiveForm },
+    { path: 'signalsdemo', component: SignalsDemo },
+    { path: 'materialdemo', component: MaterialComponentDemo },
     { path: '', redirectTo: 'user-profile', pathMatch: 'full' },
 ];
