@@ -14,6 +14,7 @@ import { RouterLink } from "@angular/router";
             <li><a routerLink="/reactiveform">Reactive Form</a></li>
             <li><a routerLink="/signalsdemo">Signals Demo</a></li>
             <li><a routerLink="/materialdemo">Material Demo</a></li>
+            <li><a routerLink="/dynamiccomponent">Dynamic Component</a></li>
         </ul>
     </nav>
     `,

@@ -7,6 +7,7 @@ import { BasicForm } from './forms/basicform.component';
 import { ReactiveForm } from './forms/reactiveform.component';
 import { SignalsDemo } from './signals/signalsdemo.component';
 import { MaterialComponentDemo } from './material/materialdemo.component';
+import { ComponentOutletDemo2Component } from './componentoutlet/componentoutletdemo2.component';
 
 
 export const routes: Routes = [
@@ -18,5 +19,6 @@ export const routes: Routes = [
     { path: 'reactiveform', component: ReactiveForm },
     { path: 'signalsdemo', component: SignalsDemo },
     { path: 'materialdemo', component: MaterialComponentDemo },
+    { path: 'dynamiccomponent', component: ComponentOutletDemo2Component },
     { path: '', redirectTo: 'user-profile', pathMatch: 'full' },
 ];
