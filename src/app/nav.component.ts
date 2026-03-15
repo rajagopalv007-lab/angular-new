@@ -15,6 +15,9 @@ import { RouterLink } from "@angular/router";
             <li><a routerLink="/signalsdemo">Signals Demo</a></li>
             <li><a routerLink="/materialdemo">Material Demo</a></li>
             <li><a routerLink="/dynamiccomponent">Dynamic Component</a></li>
+            <li><a routerLink="/templateref">Template Reference</a></li>
+            <li><a routerLink="/templaterefTs">Template Reference Ts</a></li>
+            
         </ul>
     </nav>
     `,
